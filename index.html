@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<h1>🍔 Memory Matching Game 🍕</h1>
+<p>Flip two cards. If they match, they stay open!</p>
+
+<div id="info">
+  Time: <b id="seconds">0</b>s
+</div>
+
+<div id="board"></div>
+
+<button id="restart">Restart</button>
+<div id="win-msg">You Win! Good job! 🎉</div>
+
+<audio id="matchSound" src="match.mp3"></audio>
+<audio id="wrongSound" src="wrong.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

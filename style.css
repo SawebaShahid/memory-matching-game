@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff4e0;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #d45c00;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #a04000;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#info {
+  margin: 10px 0 20px;
+  font-size: 16px;
+  color: #a04000;
+}
+
+#info b {
+  color: #d45c00;
+}
+
+#board {
+  width: 380px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  background-color: #fff4e0;
+  border: 3px dotted #d45c00;
+  border-radius: 8px;
+  font-size: 30px;
+  line-height: 75px;
+  cursor: pointer;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.box.open {
+  background-color: #ffe8c0;
+  color: #333;
+  border: 3px dotted #ff8c00;
+}
+
+.box.done {
+  background-color: #d4f5d4;
+  color: #333;
+  border: 3px dotted #3aaa3a;
+  cursor: default;
+}
+
+#restart, #sound-toggle {
+  margin-top: 20px;
+  padding: 8px 20px;
+  font-size: 15px;
+  background-color: #d45c00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#restart:hover, #sound-toggle:hover {
+  background-color: #a04000;
+}
+
+#win-msg {
+  display: none;
+  margin-top: 15px;
+  font-size: 22px;
+  color: #3aaa3a;
+  font-weight: bold;
+}
